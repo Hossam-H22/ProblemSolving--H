@@ -13,8 +13,7 @@ int main()
     {
         int a,b,c;
         cin>>a>>b>>c;
-        a +=(b+c);
-        if (a>=2) cont++;
+        if (a+b+c>=2) cont++;
     }
     cout << cont;
 
