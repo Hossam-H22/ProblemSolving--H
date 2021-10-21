@@ -11,7 +11,7 @@ int main()
     int arr[200]={};
     cin>>s;
     int siz = s.size();
-    fo1(0, s.size())
+    for(int i=0 ; i<s.size() ; i++)
     {
         arr[s[i]]++;
         if(arr[s[i]]>1) siz--;
