@@ -1,6 +1,8 @@
 // link :-  https://codeforces.com/contest/381/problem/A
 
-//     -->  Dragon_H22  <--
+// -------------------------------
+// |    -->  Dragon_H22  <--     |
+// -------------------------------
 #include <bits/stdc++.h>
 #define io ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define inf 0x3f3f3f3f3f3f3f3f
@@ -30,5 +32,59 @@ int main()
     }
     cout << first << " " << second;
 
+    return 0;
+}
+
+
+
+//-------------------------------------------------------------------
+
+
+// -------------------------------
+// |    -->  Dragon_H22  <--     |
+// -------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    int N, Scount = 0, Dcount = 0, arr[1009] = {};
+    cin >> N;
+ 
+    for (int i = 1; i <= N; i++) cin >> arr[i];
+ 
+    int ii=1 , j=N;
+    for (int i = 1; i <= N; i++)
+    {
+        if (i%2 != 0)
+        {
+            if (arr[ii] > arr[j])
+            {
+                Scount += arr[ii];
+                ii++;
+            }
+            else
+            {
+                Scount += arr[j];
+                j--;
+            }
+ 
+        }
+        else if (i%2 == 0)
+        {
+            if (arr[ii] > arr[j])
+            {
+                Dcount += arr[ii];
+                ii++;
+            }
+            else
+            {
+                Dcount += arr[j];
+                j--;
+            }
+        }
+    }
+    cout << Scount << " " << Dcount;
+    
     return 0;
 }
