@@ -9,8 +9,7 @@ int main()
 {
     long long n;
     cin >> n;
-    if(n==0) cout<<0;
-    else if(n<=2) cout<<1;
+    if(n<=2) cout<<1;
     else
     {
         long long ans=(n/3)*2;
