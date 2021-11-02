@@ -1,2 +1,2 @@
 # Problem Solving
-### solutions-of-codeforces
+### solutions of problems using programming languages
