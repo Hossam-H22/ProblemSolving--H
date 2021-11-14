@@ -61,6 +61,5 @@ int main()
     solve();
     if (!is) cout << -1;
 
-
     return 0;
 }

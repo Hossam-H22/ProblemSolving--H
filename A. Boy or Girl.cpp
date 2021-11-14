@@ -19,5 +19,6 @@ int main()
     if (siz%2==0) cout << "CHAT WITH HER!";
     else cout << "IGNORE HIM!";
 
+
     return 0;
 }

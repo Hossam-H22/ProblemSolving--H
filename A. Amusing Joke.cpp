@@ -22,5 +22,6 @@ int main()
     sort(s3.begin(), s3.end());
     (s1==s3)? cout<<"YES" : cout<<"NO";
 
+
     return 0;
 }

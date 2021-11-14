@@ -21,5 +21,6 @@ int main()
         }
     }
     cout << abs(y-3)+abs(x-3);
+
     return 0;
 }

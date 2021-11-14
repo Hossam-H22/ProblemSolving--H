@@ -20,5 +20,6 @@ int main()
     else if (a==d) cout<<"Friendship";
     else cout<<"Danik";
 
+
     return 0;
 }

@@ -28,6 +28,7 @@ int main()
         if (done) break;
     }
     cout<<n;
+
     return 0;
 }
 
