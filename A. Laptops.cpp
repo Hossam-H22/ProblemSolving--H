@@ -19,5 +19,6 @@ int main()
     if (happy) cout << "Happy Alex";
     else cout << "Poor Alex";
 
+
     return 0;
 }

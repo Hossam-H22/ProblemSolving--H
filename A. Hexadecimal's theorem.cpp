@@ -30,6 +30,5 @@ int main()
         cout<<0<<" "<<a<<" "<<b;
     }
 
-
     return 0;
 }

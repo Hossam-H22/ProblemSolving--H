@@ -20,6 +20,5 @@ int main()
     }
     cout<<maxi-mini+1-n;
 
-
     return 0;
 }

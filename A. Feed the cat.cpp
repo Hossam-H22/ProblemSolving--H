@@ -33,6 +33,5 @@ int main()
         cout << fixed << setprecision(4) << after;
     }
 
-
     return 0;
 }

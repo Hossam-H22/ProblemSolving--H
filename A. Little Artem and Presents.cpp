@@ -17,6 +17,5 @@ int main()
         else cout<<ans+1;
     }
 
-
     return 0;
 }

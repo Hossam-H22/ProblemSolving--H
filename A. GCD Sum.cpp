@@ -20,7 +20,6 @@ ll sumofdigit(ll num)
         sum += (num%10);
         num/=10;
     }
-
     return sum;
 }
 
@@ -30,6 +29,7 @@ ll gcd(ll n, ll x)
 
     return gcd(x, n%x);
 }
+
 int main()
 {
     io;
@@ -48,7 +48,6 @@ int main()
         while (g <= 1);
         cout << n-1 << endl;
     }
-
 
     return 0;
 }

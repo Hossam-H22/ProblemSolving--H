@@ -15,6 +15,5 @@ int main()
         else if (i%4==1) cout << string(m-1, '.') << "#\n";
         else cout << "#" << string(m-1, '.') << "\n";
     }
-
     return 0;
 }

@@ -23,5 +23,6 @@ int main()
     cout << arr[0];
     for (int i=1 ; i<cont ; i++) cout << "+" << arr[i];
 
+
     return 0;
 }
