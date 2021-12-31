@@ -79,7 +79,5 @@ int main()
     }
     cout<<awin<<" "<<draw<<" "<<bwin<<endl;
 
-
-
     return 0;
 }

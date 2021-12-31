@@ -9,9 +9,7 @@ int main()
 {
     int N, Scount = 0, Dcount = 0, arr[1009] = {};
     cin >> N;
- 
     for (int i = 1; i <= N; i++) cin >> arr[i];
- 
     int ii=1 , j=N;
     for (int i = 1; i <= N; i++)
     {
