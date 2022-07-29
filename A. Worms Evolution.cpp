@@ -1,0 +1,45 @@
+// link :- https://codeforces.com/contest/31/problem/A
+// -------------------------------
+// |    -->  Dragon_H22  <--     |
+// -------------------------------
+#include <bits/stdc++.h>
+#define io ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define inf 0x3f3f3f3f3f3f3f3f
+#define file freopen("input.txt","r",stdin);freopen("output.txt","w",stdout);
+#define fo1(s, n, i) for(int i=s ; i<n ; i++)
+#define fo2(s, n) for(int i=s ; i>=n ; i--)
+using namespace std;
+typedef long long ll;
+typedef unsigned long long ull;
+typedef long double ld;
+
+
+int main()
+{
+    io;
+    int n;
+    cin>>n;
+    int arr[n+5];
+    fo1(0, n, i) cin>>arr[i];
+    fo1(0,n, i)
+    {
+        fo1(0, n, i2)
+        {
+            if (i==i2) continue;
+            fo1(0,n,i3)
+            {
+                if(i==i3 || i2==i3) continue;
+                if (arr[i]+arr[i2]==arr[i3])
+                {
+                    cout<<i3+1<<" "<<i2+1<<" "<<i+1;
+                    return 0;
+                }
+            }
+        }
+    }
+    cout<<-1;
+
+
+
+    return 0;
+}
