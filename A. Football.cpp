@@ -1,36 +1,47 @@
-// link :- https://codeforces.com/contest/43/problem/A
-// -------------------------------
-// |    -->  Dragon_H22  <--     |
-// -------------------------------
+// https://codeforces.com/contest/96/problem/A
+/*
+██████  ██████   █████   ██████   ██████  ███    ██         ██   ██ ██████  ██████
+██   ██ ██   ██ ██   ██ ██       ██    ██ ████   ██         ██   ██      ██      ██
+██   ██ ██████  ███████ ██   ███ ██    ██ ██ ██  ██         ███████  █████   █████
+██   ██ ██   ██ ██   ██ ██    ██ ██    ██ ██  ██ ██         ██   ██ ██      ██
+██████  ██   ██ ██   ██  ██████   ██████  ██   ████ ███████ ██   ██ ███████ ███████
+ */
 #include <bits/stdc++.h>
+#include <iostream>
 #define io ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define inf 0x3f3f3f3f3f3f3f3f
 #define file freopen("input.txt","r",stdin);freopen("output.txt","w",stdout);
-#define fo1(s, n) for(int i=s ; i<n ; i++)
-#define fo2(s, n) for(int i=s ; i>=n ; i--)
+#define endl '\n'
 using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
 
+void solve(){
+    int c=1;
+    string s;
+    cin>>s;
+    char current=s[0];
+    for(int i=1; i<s.length(); i++){
+        if(current==s[i]) {
+            c++;
+            if(c>=7) break;
+        }
+        else {
+            current = s[i];
+            c = 1;
+        }
+    }
+    c>=7?cout<<"YES":cout<<"NO";
+}
+
 
 int main()
 {
     io;
-    int n, c1=1, c2=0, flag=1;
-    string s1, s2, m;
-    cin>>n>>s1;
-    fo1(1, n)
-    {
-        cin>>m;
-        if (m==s1) c1++;
-        else
-        {
-            if (flag--) s2=m;
-            c2++;
-        }
-    }
-    (c1>c2)? cout<<s1 : cout<<s2;
+    int t=1;
+//    cin>>t;
+    while(t--) solve();
 
     return 0;
 }
